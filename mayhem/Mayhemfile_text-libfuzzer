@@ -1,0 +1,12 @@
+# Dictionary is byte-identical to upstream test/fuzz/dictionaries/text-fuzzer.dict (the AFL text-fuzzer
+# harness's dictionary) and text-libfuzzer.dict; this target is the libFuzzer port of text-fuzzer.
+project: savantenvs/vis
+target: text-libfuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/text-libfuzzer/testsuite
+cmds:
+  - cmd: /mayhem/text-libfuzzer
+    libfuzzer: true
+    timeout: 10
+    dictionary: /mayhem/mayhem/text-libfuzzer/text-libfuzzer.dict

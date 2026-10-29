@@ -1,0 +1,10 @@
+project: savantenvs/vis
+target: vis-digraph
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/vis-digraph/testsuite
+cmds:
+  - cmd: /mayhem/vis-digraph-fuzzer
+    libfuzzer: true
+    timeout: 10
+    dictionary: /mayhem/mayhem/vis-digraph/vis-digraph.dict
