@@ -1,0 +1,10 @@
+i 0 Hello.\ n\nNext\tparagraph\n\nlast
+=  3
+?
+m 22 3
+m 23 3
+m 24 8
+m 25 8
+d 2 3
+#
+q

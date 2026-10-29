@@ -1,0 +1,10 @@
+project: savantenvs/vis
+target: buffer-fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/buffer-fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/buffer-fuzzer
+    libfuzzer: true
+    timeout: 10
+    dictionary: /mayhem/mayhem/buffer-fuzzer/buffer-fuzzer.dict

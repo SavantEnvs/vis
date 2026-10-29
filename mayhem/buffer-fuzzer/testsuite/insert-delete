@@ -1,0 +1,8 @@
+i 0 hello
+i 5 world
+p
+#
+?
+d 0 5
+p
+q

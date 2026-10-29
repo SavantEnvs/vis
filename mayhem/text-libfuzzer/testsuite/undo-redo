@@ -1,0 +1,15 @@
+i 0 foo
+s
+i 3 bar
+s
+i 6 baz
+u
+u
+r
+-
+-
++
++
+f 0 bar
+p
+q

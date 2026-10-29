@@ -1,0 +1,11 @@
+# RFC 1345 digraph names used by vis-digraph
+digraph_sp="SP"
+digraph_nb="Nb"
+digraph_do="DO"
+digraph_at="At"
+digraph_a_diaeresis="a:"
+digraph_e_acute="e'"
+digraph_ss="ss"
+digraph_lt_paren="<("
+digraph_slash="//"
+word_sep="\x00"
